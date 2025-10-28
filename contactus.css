@@ -1,0 +1,312 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6e6e6;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-links li a:hover {
+    border-bottom: 3px solid rgb(144, 21, 28, 1);
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #d9d9d9;
+}
+
+/* Left Side (Text & Form) */
+.contact-content {
+    width: 50%;
+    padding-right: 30px;
+}
+
+.contact-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.contact-content p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #f5f2e9;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Form Groups */
+.form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 150px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.submit-btn:hover {
+    background-color: #660000;
+}
+
+.contact-image {
+    width: 50%;
+}
+
+.contact-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* Get In Touch Section */
+.appointment-section {
+    text-align: center;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.appointment-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.appointment-image {
+    position: relative;
+    width: 300px;
+}
+
+.appointment-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.image-text {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/* Appointment Form */
+.appointment-form {
+    background-color: #d9d9d9;
+    padding: 30px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.appointment-form h3 {
+    margin-bottom: 15px;
+}
+
+.appointment-row {
+    display: flex;
+    gap: 15px;
+}
+
+.appointment-form input,
+.appointment-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Button */
+.appointment-form .submit-btn {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.appointment-form .submit-btn:hover {
+    background-color: #660000;
+}
+/* Contact Info Section */
+.contact-info {
+    background-color: #800000;
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.info-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.info-box img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.info-box p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+/* Footer */
+.footer {
+    background-color: #222;
+    padding: 30px 0;
+    color: white;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+}
+.left {
+    max-width: 50%;
+    color: white;
+}
+.left h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: white; 
+}
+.left h1 span {
+    color: #b22222;
+}
+.left h1::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin-top: 5px;
+}
+.left em {
+    font-style: italic;
+    color: white;
+}
+.right {
+    text-align: right;
+    color: white;
+}
+.right .phone {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+.social-icons {
+    margin-top: 10px;
+}
+.social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+}

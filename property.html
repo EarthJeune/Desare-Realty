@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desare Realty</title>
+    <link rel="stylesheet" href="property.css">
+</head>
+<body>
+
+    <header class="header">
+        <img src="misc/logo.png" alt="Desare Realty Logo" class="logo-img">
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="#">PROPERTIES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="findagent.html">FIND AGENTS</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+
+    </section>
+
+            <div class="search-container">
+            <form class="search-form">
+                <select name="property-type" id="property-type">
+                    <option value="">Property Type</option>
+                    <option value="Single Attached">Single Attached</option>
+                    <option value="Single Detached">Single Detached</option>
+                    <option value="Townhouse">Townhouse</option>
+                    <option value="Duplex">Duplex</option>
+                </select>
+                <select name="location" id="location">
+                    <option value="">Location</option>
+                    <option value="Biñan, Laguna">Biñan, Laguna</option>
+                    <option value="Lipa, Batangas">Lipa, Batangas</option>
+                    <option value="Dasmariñas, Cavite">Dasmariñas, Cavite</option>
+                    <option value="Cabuyao, Laguna">Cabuyao, Laguna</option>
+                </select>
+                <select name="price-range" id="price-range">
+                    <option value="">Price Range</option>
+                    <option value="1M-3M">₱1M - ₱3M</option>
+                    <option value="3M-6M">₱3M - ₱6M</option>
+                    <option value="6M-9M">₱6M - ₱9M</option>
+                    <option value="9M-12M">₱9M - ₱12M</option>
+                    <option value="12M-15M">₱12M - ₱15M</option>
+
+                </select>
+                <button type="submit">SEARCH</button>
+            </form>
+        </div>
+    
+    <section class="house-listings">
+        <h2>Featured Properties</h2>
+        <div class="listings-container">
+
+        </div>
+    </section>
+
+    
+    <!-- Popup Modal -->
+<div id="houseModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-image-container">
+            <button class="prev" onclick="changeImage(-1)">&#10094;</button>
+            <img id="modalImage" src="" alt="House Image">
+            <button class="next" onclick="changeImage(1)">&#10095;</button>
+        </div>
+        <div class="modal-description">
+            <h3 id="modalTitle">House Name</h3>
+            <p id="modalDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <div class="left">
+            <h1>DESARE <span>REALTY</span></h1>
+            <em>ELEVATE YOUR DESIRE</em>
+            <p>RJ Titus Commercial Bldg. Brgy. San Francisco, City of Biñan, Laguna. 4024.</p>
+        </div>
+        <div class="right">
+            <p>CALL US AT:</p>
+            <p class="phone">09123456789</p>
+            <p>OR CONTACT US AT:</p>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/desarerealtyofficial"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@desarerealty"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/desarerealty/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="newjavascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">  
+</body>
+</html>

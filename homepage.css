@@ -1,0 +1,377 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 10px 15px;
+}
+
+.nav-links li a:hover {
+    border-bottom: 3px solid rgb(144, 21, 28, 1);
+}
+
+/* Hero Section */
+.hero {
+    background: url('misc/homepage.png') no-repeat center center/cover;
+    height: 500px;
+    position: relative;
+}
+
+.hero .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+/* Find an Agent Section */
+.find-agent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+.agent-img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.agent-text {
+    width: 50%;
+}
+
+.agent-text h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.agent-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #7b1d1d;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #a02121;
+}
+/* Trending Searches Section */
+.trending-searches {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.trending-searches h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.search-item {
+    text-align: center;
+}
+
+.search-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.search-item p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+/* Hover effect for Trending Searches Today images */
+.search-item img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.search-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Office Staff Section */
+.office-staff {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.office-staff h2 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.office-staff h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9d1d20;
+    margin-bottom: 30px;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Staff Card */
+.staff-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    position: relative;
+}
+
+/* Image */
+.staff-image {
+    width: 100%;
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.staff-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+/* Description Box */
+.staff-info {
+    background: white;
+    padding: 15px;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.staff-info h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.staff-info p {
+    font-size: 14px;
+    color: #555;
+    margin: 2px 0;
+}
+
+.staff-icons {
+    margin-top: 10px;
+}
+
+.staff-icons i {
+    font-size: 18px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.staff-icons i:hover {
+    color: #9d1d20;
+}
+/* Latest News Section */
+.latest-news {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.latest-news h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.news-item {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.news-item img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.news-content {
+    text-align: left;
+    width: 60%;
+}
+
+.news-content h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-content p {
+    font-size: 14px;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    background: #9d1d20;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.read-more:hover {
+    background: #c22b2f;
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 80px;
+    box-sizing: border-box;
+}
+
+.footer .left {
+    text-align: left;
+    max-width: 600px;
+
+}
+
+.footer .left h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+
+}
+
+.footer .left span {
+    color: #c62828;
+
+}
+
+.footer .left p {
+    font-size: 1rem;
+    margin-top: 20px;
+
+}
+
+.footer .right {
+    text-align: right;
+}
+
+.footer .right h2 {
+    font-size: 2.0rem;
+    margin-bottom: 20px;
+}
+
+.footer .right p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.footer .social-icons a {
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.footer .social-icons a img {
+    width: 32px;
+    height: 32px;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desare Realty</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+
+<body>
+
+   
+    <header class="header">
+        <section>
+        <img src="misc/logo.png" alt="Desare Realty Logo" class="logo-img">
+        </section>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="property.html">PROPERTIES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="findagent.html">FIND AGENTS</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="#">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">         
+        </div>
+    </section>
+
+    <body>
+        
+        <div class="nav">
+            <button class="active" onclick="filterGallery('all')">All</button>
+            <button onclick="filterGallery('recognitions')">Recognitions</button>
+            <button onclick="filterGallery('trainings')">Trainings</button>
+            <button onclick="filterGallery('close-deals')">Close Deals</button>
+            <button onclick="filterGallery('feedbacks')">Feedbacks</button>
+        </div>
+        
+        <div class="gallery" id="gallery">
+            <img src="gallery/SOLD1 (1).png" class="all close-deals">
+            <img src="gallery/SOLD1 (2).png" class="all close-deals">
+            <img src="gallery/SOLD1 (3).png" class="all close-deals">
+            <img src="gallery/SOLD1 (4).png" class="all close-deals">
+            <img src="gallery/SOLD1 (5).png" class="all close-deals">
+            <img src="gallery/SOLD1 (6).png" class="all close-deals">
+            <img src="gallery/SOLD1 (7).png" class="all close-deals">
+            <img src="gallery/SOLD1 (8).png" class="all close-deals">
+            <img src="gallery/SOLD1 (9).png" class="all close-deals">
+            <img src="gallery/SOLD1 (10).png" class="all close-deals">
+            <img src="gallery/SOLD1 (11).png" class="all close-deals">
+            <img src="gallery/SOLD1 (12).png" class="all close-deals">
+            <img src="gallery/SOLD1 (13).png" class="all close-deals">
+            <img src="gallery/SOLD1 (14).png" class="all close-deals">
+            <img src="gallery/SOLD1 (15).png" class="all close-deals">
+            <img src="gallery/SOLD1 (16).png" class="all close-deals">
+            <img src="gallery/SOLD1 (17).png" class="all close-deals">
+            <img src="gallery/SOLD1 (18).png" class="all close-deals">
+            <img src="gallery/SOLD1 (19).png" class="all close-deals">
+            
+            <img src="gallery/R1 (1).png" class="all recognitions">
+            <img src="gallery/R1 (2).png" class="all recognitions">
+            <img src="gallery/R1 (3).png" class="all recognitions">
+            <img src="gallery/R1 (4).png" class="all recognitions">
+            <img src="gallery/R1 (5).png" class="all recognitions">
+            <img src="gallery/R1 (6).png" class="all recognitions">
+            <img src="gallery/R1 (7).png" class="all recognitions">
+            <img src="gallery/R1 (8).png" class="all recognitions">
+            <img src="gallery/R1 (9).png" class="all recognitions">
+            <img src="gallery/R1 (10).png" class="all recognitions">
+            <img src="gallery/R1 (11).png" class="all recognitions">
+
+           
+            <img src="gallery/T1 (1).png" class="all trainings">
+            <img src="gallery/T1 (2).png" class="all trainings">
+            <img src="gallery/T1 (3).png" class="all trainings">
+            <img src="gallery/T1 (4).png" class="all trainings">
+            <img src="gallery/T1 (5).png" class="all trainings">
+            <img src="gallery/T1 (6).png" class="all trainings">
+            <img src="gallery/T1 (7).png" class="all trainings">
+            <img src="gallery/T1 (8).png" class="all trainings">
+            <img src="gallery/T1 (9).png" class="all trainings">
+            <img src="gallery/T1 (10).png" class="all trainings">
+            <img src="gallery/T1 (11).png" class="all trainings">
+            <img src="gallery/T1 (12).png" class="all trainings">
+            <img src="gallery/T1 (13).png" class="all trainings">
+
+            <img src="gallery/F1 (1).png" class="all feedbacks">
+            <img src="gallery/F1 (2).png" class="all feedbacks">
+            <img src="gallery/F1 (3).png" class="all feedbacks">
+            <img src="gallery/F1 (4).png" class="all feedbacks">
+            <img src="gallery/F1 (5).png" class="all feedbacks">
+            <img src="gallery/F1 (6).png" class="all feedbacks">
+            <img src="gallery/F1 (7).png" class="all feedbacks">
+            <img src="gallery/F1 (8).png" class="all feedbacks">
+            <img src="gallery/F1 (9).png" class="all feedbacks">
+            <img src="gallery/F1 (10).png" class="all feedbacks">
+            <img src="gallery/F1 (11).png" class="all feedbacks">
+            
+
+        </div>
+    
+        <script>
+            function filterGallery(category) {
+                let images = document.querySelectorAll('.gallery img');
+                let buttons = document.querySelectorAll('.nav button');
+                
+                buttons.forEach(button => {
+                    button.classList.remove('active');
+                });
+                event.target.classList.add('active');
+                
+                images.forEach(img => {
+                    if (category === 'all' || img.classList.contains(category)) {
+                        img.classList.remove('hidden');
+                    } else {
+                        img.classList.add('hidden');
+                    }
+                });
+                if (category === 'trainings') {
+                trainingLayout.classList.remove('hidden');
+            } else {
+                trainingLayout.classList.add('hidden');
+            }
+            }
+        </script>
+    </body>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="left">
+                <h1>DESARE <span>REALTY</span></h1>
+                <em>ELEVATE YOUR DESIRE</em>
+                <p>RJ Titus Commercial Bldg. Brgy. San Francisco, City of Biñan, Laguna. 4024.</p>
+            </div>
+            <div class="right">
+                <p>CALL US AT:</p>
+                <p class="phone">09123456789</p>
+                <p>OR CONTACT US AT:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/desarerealtyofficial"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@desarerealty"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/desarerealty/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(question => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</body>
+
+</html>

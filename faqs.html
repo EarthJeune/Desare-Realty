@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desare Realty</title>
+    <link rel="stylesheet" href="faqs.css">
+</head>
+
+<body>
+
+   
+    <header class="header">
+        <section>
+        <img src="misc/logo.png" alt="Desare Realty Logo" class="logo-img">
+        </section>
+        <nav class="nav">
+            <ul class="nav-links">
+                <li><a href="homepage.html">HOME</a></li>
+                <li><a href="property.html">PROPERTIES</a></li>
+                <li><a href="aboutus.html">ABOUT US</a></li>
+                <li><a href="findagent.html">FIND AGENTS</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="contactus.html">CONTACT US</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Got a question?<br>Get an answer</h1>
+            <p>We've put together some commonly asked questions to give you more information about our Realty.</p>
+        </div>
+    </section>
+
+
+    <section class="faq-section">
+        <h2>How can we help you?</h2>
+        <div class="search-bar">
+            <input type="text" placeholder="Ask us anything..." />
+            <button type="submit">🔍</button>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq">
+                <div class="faq-question">What services does Desare Realty provide?</div>
+                <div class="faq-answer">
+                    <p>Desare Realty offers a range of services including buying, selling, and investment consulting.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">How can I contact Desare Realty?</div>
+                <div class="faq-answer">
+                    <p>You can contact Desare Realty via email, phone, or through their website contact form.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">Is Desare Realty only focused on local markets, or do you operate globally?</div>
+                <div class="faq-answer">
+                    <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                </div>
+            </div>
+
+            <div class="faq">
+                <div class="faq-question">How can Desare Realty assist first-time homebuyers?</div>
+                <div class="faq-answer">
+                    <p>Desare Realty helps first-time buyers with property selection, financing advice, and legal procedures.</p>
+                </div>
+            </div>
+            
+
+                <div class="faq">
+                    <div class="faq-question">What sets Desare Realty apart from other real estate agencies?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-question">Does Desare Realty handle commercial real estate transactions?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-question">How can I stay updated on the latest real estate trends and listings with Desare Realty?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-question">Does Desare Realty offer real estate investment advice?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-question">Are there any fees associated with Desare Realty's services?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <div class="faq-question">How can I start my real estate journey with Desare Realty?</div>
+                    <div class="faq-answer">
+                        <p>Desare Realty operates both locally and globally, providing services for different real estate markets.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="left">
+                <h1>DESARE <span>REALTY</span></h1>
+                <em>ELEVATE YOUR DESIRE</em>
+                <p>RJ Titus Commercial Bldg. Brgy. San Francisco, City of Biñan, Laguna. 4024.</p>
+            </div>
+            <div class="right">
+                <p>CALL US AT:</p>
+                <p class="phone">09123456789</p>
+                <p>OR CONTACT US AT:</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/desarerealtyofficial"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/@desarerealty"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/desarerealty/"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.querySelectorAll(".faq-question").forEach(question => {
+            question.addEventListener("click", () => {
+                const answer = question.nextElementSibling;
+                answer.style.display = answer.style.display === "block" ? "none" : "block";
+            });
+        });
+    </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</body>
+</html>
